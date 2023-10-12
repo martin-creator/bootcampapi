@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 
 const app = express();
 
+
 // Load env vars
 dotenv.config({ path: './config/config.env' });
 
@@ -15,6 +16,9 @@ connectDB();
 
 // Route files
 const bootcampRoutes = require('./routes/bootcampRoutes');
+
+// Body parser
+app.use(express.json())
 
 // Dev logging middleware
 if (process.env.NODE_ENV === 'development') {
