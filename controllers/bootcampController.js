@@ -4,7 +4,7 @@
 // @route   GET /api/v1/bootcamps
 // @access  Public
 const getBootcamps = (req, res, next) => {
-    res.status(200).json({ success: true, msg: 'Show all bootcamps' });
+    res.status(200).json({ success: true, msg: 'Show all bootcamps', hello: req.hello });
 }
 
 // @desc    Get single bootcamp
@@ -36,13 +36,10 @@ const deleteBootcamp = (req, res, next) => {
 }
 
 
-
-
-
-
-
-
-
-export default {
-    getBootcamps
+module.exports = {
+    getBootcamps,
+    getBootcamp,
+    createBootcamp,
+    updateBootcamp,
+    deleteBootcamp
 }
