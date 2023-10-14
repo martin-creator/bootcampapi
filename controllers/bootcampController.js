@@ -75,11 +75,27 @@ const deleteBootcamp =  asyncHandler(async (req, res, next) => {
     
 });
 
+// @desc    Delete All bootcamps
+// @route   DELETE /api/v1/bootcamps
+// @access  Private
+const deleteAllBootcamps = asyncHandler(async (req, res, next) => {
+    
+        const bootcamps = await Bootcamp.deleteMany();
+
+        if(!bootcamps){
+            return  next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404));
+        }
+
+        res.status(200).json({success: true, data: {}});
+    
+});
+
 
 module.exports = {
     getBootcamps,
     getBootcamp,
     createBootcamp,
     updateBootcamp,
-    deleteBootcamp
+    deleteBootcamp,
+    deleteAllBootcamps
 }
