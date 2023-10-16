@@ -93,9 +93,29 @@ const updateCourse = asyncHandler(async (req, res, next) => {
 
 );
 
+
+// @desc    Delete course
+// @route   DELETE /api/v1/courses/:id
+// @access  Private
+
+const deleteCourse = asyncHandler(async (req, res, next) => {
+    
+        const course = await Course.findById(req.params.id);
+    
+        if (!course) {
+            return next(new ErrorResponse(`No course with the id of ${req.params.id}`), 404);
+        }
+    
+        await course.deleteOne();
+    
+        res.status(200).json({ success: true, data: {} });
+    }
+);
+
 module.exports = {
     getCourses,
     getCourse,
     addCourse,
-    updateCourse
+    updateCourse,
+    deleteCourse
 }
