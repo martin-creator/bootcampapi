@@ -130,15 +130,20 @@ const updateBootcamp = asyncHandler(async (req, res, next) => {
 // @access  Private
 const deleteBootcamp =  asyncHandler(async (req, res, next) => {
     
-        const bootcamp = await Bootcamp.findByIdAndDelete(req.params.id);
+    const bootcamp = await Bootcamp.findById(req.params.id);
+    console.log(bootcamp);
 
-        if(!bootcamp){
-            return  next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404));
-        }
+    if(!bootcamp){
+        return  next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404));
+    }
 
-        res.status(200).json({success: true, data: {}});
-    
+    // Use deleteOne instead of deleteMany
+    await bootcamp.deleteOne();
+
+    res.status(200).json({success: true, data: {}});
+
 });
+
 
 // @desc    Delete All bootcamps
 // @route   DELETE /api/v1/bootcamps
