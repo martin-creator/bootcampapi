@@ -137,8 +137,8 @@ const deleteBootcamp =  asyncHandler(async (req, res, next) => {
         return  next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404));
     }
 
-    // Use deleteOne instead of deleteMany
-    await bootcamp.deleteOne();
+   // Use deleteOne instead of deleteMany
+   await bootcamp.deleteOne();
 
     res.status(200).json({success: true, data: {}});
 
