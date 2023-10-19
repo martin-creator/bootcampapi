@@ -6,7 +6,7 @@ const User = require('../models/User');
 // @route   POST /api/v1/auth/register
 // @access  Public
 
-const register = asyncHandler(async (req, res, next) => {
+const registerUser = asyncHandler(async (req, res, next) => {
     const { name, email, password, role } = req.body;
 
     // Create user
@@ -20,7 +20,19 @@ const register = asyncHandler(async (req, res, next) => {
 }
 );
 
+// @desc    Delete All Users
+// @route   DELETE /api/v1/auth/deleteAllUsers
+// @access  Private
+
+const deleteAllUsers = asyncHandler(async (req, res, next) => {
+    await User.deleteMany({});
+
+    res.status(200).json({ success: true, data: {} });
+}
+);
+
 
 module.exports = {
-    register
+    registerUser,
+    deleteAllUsers
 }
