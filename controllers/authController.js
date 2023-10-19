@@ -23,6 +23,41 @@ const registerUser = asyncHandler(async (req, res, next) => {
 }
 );
 
+// @desc    Login user
+// @route   POST /api/v1/auth/login
+// @access  Public
+
+const loginUser = asyncHandler(async (req, res, next) => {
+    const { email, password } = req.body;
+
+    // Validate email and password
+    if (!email || !password) {
+        return next(new ErrorResponse('Please provide an email and password.', 400));
+    }
+
+    // Check for user
+    const user = await User.findOne({ email }).select('+password');
+
+    if (!user) {
+        return next(new ErrorResponse('Invalid credentials.', 401));
+    }
+
+    // Check if password matches
+    const isMatch = await user.matchPassword(password);
+
+    if (!isMatch) {
+        return next(new ErrorResponse('Invalid credentials.', 401));
+    }
+
+    // Create token
+    const token = user.getSignedJwtToken();
+
+    //sendTokenResponse(user, 200, res);
+
+    res.status(200).json({ success: true, data: user, token });
+}
+);
+
 // @desc    Delete All Users
 // @route   DELETE /api/v1/auth/deleteAllUsers
 // @access  Private
@@ -37,5 +72,6 @@ const deleteAllUsers = asyncHandler(async (req, res, next) => {
 
 module.exports = {
     registerUser,
+    loginUser,
     deleteAllUsers
 }
