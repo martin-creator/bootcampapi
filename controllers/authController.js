@@ -14,7 +14,9 @@ const register = asyncHandler(async (req, res, next) => {
         name, email, password, role
     });
 
-    sendTokenResponse(user, 200, res);
+    //sendTokenResponse(user, 200, res);
+
+    res.status(200).json({ success: true, data: user });
 }
 );
 
