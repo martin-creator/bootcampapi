@@ -17,27 +17,27 @@ const router = express.Router();
 // Include other resource routers
 const courseRoutes = require('./courseRoutes');
 
-const {protectRoute} = require('../middleware/auth');
+const {protect} = require('../middleware/auth');
 
 // Re-route into other resource routers
 router.use('/:bootcampId/courses', courseRoutes);
 
 router.route('/:id/photo')
-    .put(bootcampPhotoUpload);
+    .put(protect, bootcampPhotoUpload);
 
 router.route('/radius/:zipcode/:distance')
     .get(getBootcampsInRadius);
 
 router.route('/')
     .get(advancedResults(Bootcamp, 'courses'), getBootcamps)
-    .post(createBootcamp)
-    .delete(deleteAllBootcamps);
+    .post(protect, createBootcamp)
+    .delete(protect, deleteAllBootcamps);
 
 
 router.route('/:id')
     .get(getBootcamp)
-    .put(updateBootcamp)
-    .delete(deleteBootcamp);
+    .put(protect, updateBootcamp)
+    .delete(protect, deleteBootcamp);
 
 module.exports = router;
 
