@@ -46,9 +46,6 @@ const getCourse = asyncHandler(async (req, res, next) => {
 // @access  Private
 
 const addCourse = asyncHandler(async (req, res, next) => {
-    console.log('---------------------------------------------------------------------------------')
-    console.log(req.params)
-    console.log('---------------------------------------------------------------------------------')
     req.body.bootcamp = req.params.bootcampId;
 
     const bootcamp = await Bootcamp.findById(req.params.bootcampId);

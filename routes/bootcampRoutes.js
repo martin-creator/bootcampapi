@@ -12,32 +12,32 @@ const {getBootcamps,
 const advancedResults = require('../middleware/advancedResults');
 const Bootcamp = require('../models/Bootcamp');
 
-// Include other resource routers
-const courseRouter = require('./courseRoutes');
-
 const router = express.Router();
+
+// Include other resource routers
+const courseRoutes = require('./courseRoutes');
 
 const {protectRoute} = require('../middleware/auth');
 
 // Re-route into other resource routers
-router.use('/:bootcampId/courses', courseRouter);
+router.use('/:bootcampId/courses', courseRoutes);
 
 router.route('/:id/photo')
-    .put(protectRoute, bootcampPhotoUpload);
+    .put(bootcampPhotoUpload);
 
 router.route('/radius/:zipcode/:distance')
     .get(getBootcampsInRadius);
 
 router.route('/')
     .get(advancedResults(Bootcamp, 'courses'), getBootcamps)
-    .post(protectRoute,createBootcamp)
-    .delete(protectRoute, deleteAllBootcamps);
+    .post(createBootcamp)
+    .delete(deleteAllBootcamps);
 
 
 router.route('/:id')
     .get(getBootcamp)
-    .put(protectRoute, updateBootcamp)
-    .delete(protectRoute, deleteBootcamp);
+    .put(updateBootcamp)
+    .delete(deleteBootcamp);
 
 module.exports = router;
 
