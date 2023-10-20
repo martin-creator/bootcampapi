@@ -2,6 +2,7 @@ const express = require('express');
 const {registerUser,
     loginUser,
     getMe, 
+    forgotPassword,
     deleteAllUsers} = require('../controllers/authController');
 
 const router = express.Router();
@@ -16,6 +17,9 @@ router.route('/login')
 
 router.route('/me')
     .get(protect, getMe);
+
+router.route('/forgotpassword')
+    .post(forgotPassword);
 
 router.route('/cleanusers')
     .delete(deleteAllUsers);
