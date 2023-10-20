@@ -28,3 +28,4 @@ const protectRoute = asyncHandler(async (req, res, next) => {
     }
 
 }
+);  
