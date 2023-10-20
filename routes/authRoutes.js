@@ -3,6 +3,7 @@ const {registerUser,
     loginUser,
     getMe, 
     forgotPassword,
+    resetPassword,
     deleteAllUsers} = require('../controllers/authController');
 
 const router = express.Router();
@@ -20,6 +21,9 @@ router.route('/me')
 
 router.route('/forgotpassword')
     .post(forgotPassword);
+
+router.route('/resetpassword/:resettoken')
+    .put(resetPassword);
 
 router.route('/cleanusers')
     .delete(deleteAllUsers);
