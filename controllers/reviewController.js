@@ -91,3 +91,11 @@ const updateReview = asyncHandler(async (req, res, next) => {
     
 
 });
+
+
+module.exports = {
+    getReviews,
+    getReview,
+    addReview,
+    updateReview
+}
