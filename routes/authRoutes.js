@@ -6,6 +6,7 @@ const {registerUser,
     resetPassword,
     updateDetails,
     updatePassword,
+    logoutUser,
     deleteAllUsers} = require('../controllers/authController');
 
 const router = express.Router();
@@ -17,6 +18,9 @@ router.route('/register')
 
 router.route('/login')
     .post(loginUser);
+
+router.route('/logout')
+    .get(logoutUser);
 
 router.route('/me')
     .get(protect, getMe);
