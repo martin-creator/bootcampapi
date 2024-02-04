@@ -1,0 +1,250 @@
+repo_name: martin-creator/bootcampapi
+report_id: 4b7ec5c02b4a3d073ad47945a32b1aa7
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-04T08:02:13+00:00'
+requested_by: martin-creator
+provider: github
+branch: master
+detected_tools_count: 18
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/martin-creator/bootcampapi
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:51:16.000000000 Z
+- name: Mongoose
+  description: MongoDB object modeling designed to work in an asynchronous environment
+  website_url: http://mongoosejs.com/
+  version: 7.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Document Mapper (ODM)
+  image_url: https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:37:23.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-12 16:59:52.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi
+  detection_source: Repo Metadata
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 3.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-20 15:57:52.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-12 16:59:52.000000000 Z
+- name: Newman
+  description: CLI collection runner for Postman
+  website_url: https://github.com/postmanlabs/newman
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: API Tools
+  image_url: https://img.stackshare.io/service/3766/10251060.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-25 08:57:30.000000000 Z
+- name: Nodemailer
+  description: A module for Node.js applications to allow email sending
+  website_url: http://www.nodemailer.com/
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Transactional Email
+  image_url: https://img.stackshare.io/service/2862/qr2-jCLr.jpg
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-20 15:57:52.000000000 Z
+- name: bcryptjs
+  description: Optimized bcrypt in plain JavaScript with zero dependencies
+  package_url: https://www.npmjs.com/bcryptjs
+  version: 2.4.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16857/default_627f05e6a07ce29fc9f119417270f38e8aa5c5e2.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-19 17:50:31.000000000 Z
+- name: colors
+  description: Get colors in your node.js console
+  package_url: https://www.npmjs.com/colors
+  version: 1.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15908/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-12 20:05:42.000000000 Z
+- name: cookie-parser
+  description: Parse HTTP request cookies
+  package_url: https://www.npmjs.com/cookie-parser
+  version: 1.4.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16136/default_def3edb85d7fbd20200a5cd7d0a1679e31bc8b3d.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-19 19:43:19.000000000 Z
+- name: cors
+  description: Node.js CORS middleware
+  package_url: https://www.npmjs.com/cors
+  version: 2.8.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16165/default_41f04716a804e853d5c38a5b81ee0ea8a842ad82.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:52:41.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:51:16.000000000 Z
+- name: helmet
+  description: Help secure Express/Connect apps with various HTTP headers
+  package_url: https://www.npmjs.com/helmet
+  version: 7.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16584/default_7be6bee773ad8b04cf2fb7e9ff82f5d7ba648dfd.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:47:16.000000000 Z
+- name: jsonwebtoken
+  description: JSON Web Token implementation
+  package_url: https://www.npmjs.com/jsonwebtoken
+  version: 9.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-19 17:50:31.000000000 Z
+- name: morgan
+  description: HTTP request logger middleware for node.js
+  package_url: https://www.npmjs.com/morgan
+  version: 1.10.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16097/default_c7b204838197013798409fa2b4dafce450edc7fb.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-14 19:28:16.000000000 Z
+- name: slugify
+  description: Slugifies a String
+  package_url: https://www.npmjs.com/slugify
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17389/default_33c3173e7d0e91f7cea0eab9883ca83b157bd4a5.png
+  detection_source_url: https://github.com/martin-creator/bootcampapi/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: martin-creator
+  last_updated_on: 2023-10-24 22:47:16.000000000 Z
