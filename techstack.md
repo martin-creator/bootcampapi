@@ -3,12 +3,12 @@
 ## Tech Stack
 martin-creator/bootcampapi is built on the following main stack:
 
-- [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
 - [Mongoose](http://mongoosejs.com/) – Object Document Mapper (ODM)
-- [Nodemailer](http://www.nodemailer.com/) – Transactional Email
-- [Newman](https://github.com/postmanlabs/newman) – API Tools
 - [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- [Newman](https://github.com/postmanlabs/newman) – API Tools
+- [Nodemailer](http://www.nodemailer.com/) – Transactional Email
 
 Full tech stack [here](/techstack.md)
 
@@ -18,12 +18,12 @@ Full tech stack [here](/techstack.md)
 ## Tech Stack
 martin-creator/bootcampapi is built on the following main stack:
 
-- <img width='25' height='25' src='https://img.stackshare.io/service/1163/hashtag.png' alt='ExpressJS'/> [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1163/hashtag.png' alt='ExpressJS'/> [ExpressJS](http://expressjs.com/) – Microframeworks (Backend)
 - <img width='25' height='25' src='https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg' alt='Mongoose'/> [Mongoose](http://mongoosejs.com/) – Object Document Mapper (ODM)
-- <img width='25' height='25' src='https://img.stackshare.io/service/2862/qr2-jCLr.jpg' alt='Nodemailer'/> [Nodemailer](http://www.nodemailer.com/) – Transactional Email
-- <img width='25' height='25' src='https://img.stackshare.io/service/3766/10251060.png' alt='Newman'/> [Newman](https://github.com/postmanlabs/newman) – API Tools
 - <img width='25' height='25' src='https://img.stackshare.io/service/5577/preview.png' alt='nodemon'/> [nodemon](http://nodemon.io/) – node.js Application Monitoring
+- <img width='25' height='25' src='https://img.stackshare.io/service/3766/10251060.png' alt='Newman'/> [Newman](https://github.com/postmanlabs/newman) – API Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/2862/qr2-jCLr.jpg' alt='Nodemailer'/> [Nodemailer](http://www.nodemailer.com/) – Transactional Email
 
 Full tech stack [here](/techstack.md)
 
@@ -34,7 +34,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [martin-creator/bootcampapi](https://github.com/martin-creator/bootcampapi)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|18<br/>Tools used|02/04/24 <br/>Report generated|
+|18<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
